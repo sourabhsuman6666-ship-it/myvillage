@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>तरी पहारपुर गाँव - स्वागत है!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Icons के लिए -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #228B22, #006400); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; transition: color 0.3s; }
+        nav ul li a:hover { color: #90EE90; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(34,139,34,0.8), rgba(0,100,0,0.8)), url('https://via.placeholder.com/1920x600?text=तरी+पहारपुर+की+हरियाली') center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 60px; }
+        .hero-content h1 { font-size: 3rem; margin-bottom: 1rem; animation: fadeInUp 1s ease; }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 2rem; animation: fadeInUp 1s ease 0.2s both; }
+        .btn { background: #90EE90; color: #228B22; padding: 10px 30px; text-decoration: none; border-radius: 50px; transition: transform 0.3s; animation: fadeInUp 1s ease 0.4s both; }
+        .btn:hover { transform: scale(1.05); }
+        
+        /* About Section */
+        .about { padding: 80px 20px; max-width: 1200px; margin: 0 auto; text-align: center; background: #f0fff0; }
+        .about h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #228B22; }
+        .about p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+        
+        /* Beauty Section */
+        .beauty { padding: 80px 20px; background: #e6ffe6; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .beauty-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .beauty-card { background: white; padding: 30px; border-radius: 10px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+        .beauty-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .beauty-card i { font-size: 3rem; color: #228B22; margin-bottom: 1rem; }
+        .beauty-card h3 { margin-bottom: 1rem; color: #228B22; }
+        
+        /* People Section */
+        .people { padding: 80px 20px; background: #d4edda; text-align: center; }
+        .people h2 { font-size: 2.5rem; margin-bottom: 2rem; color: #228B22; }
+        .people p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem; }
+        
+        /* Map Section */
+        .map { padding: 80px 20px; text-align: center; background: #f0fff0; }
+        .map h2 { font-size: 2.5rem; margin-bottom: 2rem; color: #228B22; }
+        .map iframe { width: 100%; max-width: 800px; height: 400px; border: none; border-radius: 10px; }
+        
+        /* Footer */
+        footer { background: #006400; color: white; text-align: center; padding: 20px; }
+        
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Responsive */
+        @media (max-width: 768px) { .hero-content h1 { font-size: 2rem; } nav ul { flex-direction: column; gap: 10px; } }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">तरी पहारपुर गाँव</div>
+            <ul>
+                <li><a href="#home">होम</a></li>
+                <li><a href="#about">गाँव के बारे में</a></li>
+                <li><a href="#beauty">सुंदरता</a></li>
+                <li><a href="#people">लोग</a></li>
+                <li><a href="#map">लोकेशन</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>स्वागत है तरी पहारपुर में!</h1>
+            <p>यहाँ की हरियाली और शांति आपको जादू की तरह बाँध लेगी। प्रकृति का खजाना और सरल जीवन का आलम।</p>
+            <a href="#about" class="btn">और जानें</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>तरी पहारपुर का परिचय</h2>
+        <p>तरी पहारपुर, बिहार के रतनपुर, कुंधुर क्षेत्र में बसा एक खूबसूरत गाँव है (पिनकोड: 811305)। तराई की उपजाऊ भूमि पर स्थित यह गाँव सदियों से प्रकृति के आगोश में फला-फूला है। यहाँ की मिट्टी सोने जैसी उपजाऊ है, और हवा में हमेशा ताजगी बसी रहती है। गाँव की तारीफ़ में कहा जाता है कि यहाँ का हर कोना एक कविता की तरह सुंदर है – नदियों की कलकल, जंगलों की सरसराहट, और पहाड़ियों की गोद में बसे घर।</p>
+    </section>
+
+    <!-- Beauty Section -->
+    <section id="beauty" class="beauty">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #228B22;">गाँव की सुंदरता</h2>
+            <div class="beauty-grid">
+                <div class="beauty-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>हरियाली भरी तराई</h3>
+                    <p>घने जंगल और उपजाऊ खेत जो साल भर हरे-भरे रहते हैं। सुबह की ओस और शाम की धुंध गाँव को जादुई बना देती है।</p>
+                </div>
+                <div class="beauty-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>पहाड़ियों का आकर्षण</h3>
+                    <p>नजदीकी पहाड़ियाँ ट्रेकिंग के लिए परफेक्ट, जहाँ से दूर-दूर तक फैली हरियाली दिखाई देती है। सूर्योदय का नजारा अविस्मरणीय।</p>
+                </div>
+                <div class="beauty-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>नदियों की गोद</h3>
+                    <p>साफ पानी वाली नदियाँ जो गाँव को सींचती हैं। मछली पकड़ना और नहाना – यहाँ की प्राकृतिक सुविधाएँ।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- People Section -->
+    <section id="people" class="people">
+        <h2>यहाँ के लोग</h2>
+        <p>तरी पहारपुर के लोग सरल, मेहनती और मेहमाननवाज़ हैं। ज्यादातर किसान हैं, जो चावल, गन्ना और सब्जियाँ उगाते हैं। उनका जीवन प्रकृति से जुड़ा है – सुबह खेतों में, शाम को लोकगीतों के साथ। यहाँ के त्योहार जैसे दीवाली, होली और स्थानीय मेलों में सब मिल-जुलकर रहते हैं। महिलाएँ हस्तशिल्प बनाती हैं, और बच्चे नदियों किनारे खेलते हैं। ये लोग सिखाते हैं कि सुख सरलता में है।</p>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map">
+        <h2>हमारा गाँव कहाँ है?</h2>
+        <p>बिहार के रतनपुर, कुंधुर में स्थित। आइए, इस शांति को महसूस करें।</p>
+        <!-- Google Maps embed कोड यहाँ पेस्ट करें -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.067!2d85.2090!3d24.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f7e7b8f8f8f8f8%3A0x9f8f8f8f8f8f8f8f!2zVGFyaSBQYXhhcnB1ciBXNzhaK1dXOSwgS3VuZGh1ciwgUmF0YW5wdXIsIEJpaGFyIDgxMTMwNSwgSW5kaWE!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- नोट: अपना असली embed कोड डालें: Maps > Share > Embed a map > Copy HTML। -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 तरी पहारपुर गाँव। प्रकृति का सम्मान करें। | <a href="#" style="color: #90EE90;">अधिक जानकारी</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
